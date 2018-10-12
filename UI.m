@@ -2,11 +2,7 @@
  % Yao Updated 11292016 Add Fit button
     clc;clear
     global LUT mua_v musp_v Hb mel betaCarotene F_meanRatio Fig1 Fig2 Spectra
-    % F_meanRatio=1/0.6068;% obtained during LUT Calibration
-    % F_meanRatio=0.0127; % LUT_350_100
-    % F_meanRatio=0.0091;% From Hieu, testing
-    % F_meanRatio=0.0085; % LUT_320_100 Austin's beads data
-    % F_meanRatio=0.025; % try
+    F_meanRatio=0.025; % Good for fitting exploration
     warning off
      % Parse simulation output files
     [FileName_ref,PathName_ref] = uigetfile('*.mat','Select .mat file to plot');
